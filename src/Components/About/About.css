@@ -1,7 +1,38 @@
 .about-section {
     background: linear-gradient(172deg, #1296DF 6.23%, #1F5B7C 131.99%, #22506A 146.31%, #292F32 165.42%);
     padding: 60px 0;
+
+    position: relative;
+    z-index: 2; /* Content will stay above the image */
+
 }
+
+.about-section::before {
+    content: '';
+    background: url('../../Assets/line-shape.png') no-repeat center center;
+    background-size:cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.about-section::after {
+    content: '';
+    background: url('../../Assets/mask-shape.png') no-repeat center center;
+    background-size:cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 40%;
+    opacity: 0.6;
+    z-index: 1;
+}
+
 
 .about-section h2 {
     color: white;
