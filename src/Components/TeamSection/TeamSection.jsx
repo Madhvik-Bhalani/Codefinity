@@ -66,7 +66,7 @@ function TeamSection() {
     ];
 
     return (
-        <div className='team-section-container' id='team' style={{zIndex:"2"}}>
+        <div className='team-section-container' id='team'>
             <h2 className='section-header text-center'>
                 <span className="section-title">Meet The Team</span>
             </h2>

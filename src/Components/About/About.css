@@ -4,6 +4,7 @@
 
     position: relative;
     z-index: 2; /* Content will stay above the image */
+    scroll-margin-top:125px !important; 
 
 }
 

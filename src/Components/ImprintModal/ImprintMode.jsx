@@ -60,7 +60,7 @@ function ImprintModal({ imprintRef }) {
                             </p>
 
 
-                            <h4 className='mt-4'>Responsible person for the editorial work</h4>
+                            <h4 className='mt-4'>Responsible person</h4>
                             <p>Madhvik Bhalani</p>
 
                             <h4>Disclaimer</h4>

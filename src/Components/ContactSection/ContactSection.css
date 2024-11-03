@@ -14,13 +14,29 @@
     height: 100%;
     opacity: 0.7;
     z-index: 1;
+    pointer-events: none;
+    /* to prevent blocking hover effects */
 }
 
- .contact-social-links a{
+.contact-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-icons a {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+    color: #003366;
+}
+
+.contact-social-links a {
     transition: color 0.3s !important;
     color: white !important;
 }
 
-/*.contact-social-links a:hover {
-    color: #007bff !important;
-} */
+.contact-social-links a:hover {
+    color: #003366 !important;
+}
