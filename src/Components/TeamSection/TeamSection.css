@@ -1,10 +1,21 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .team-section-container {
     padding: 50px 0;
-    background:url('../../Assets/hero-bg.jpg');
+    background: url('../../Assets/hero-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 65px 0px 0px 0px;
     scroll-margin-top: 125px;
+    animation: fadeIn 1s;
 }
 
 .section-header {
@@ -31,6 +42,7 @@
 .team-card:hover {
     transform: translateY(-5px);
     box-shadow: 0.4px 0.4px 1rem rgba(35, 52, 53, 0.25);
+    /* box-shadow: 3px 3px 10px 0px #5c8ba7; */
 }
 
 .team-image {
@@ -38,6 +50,8 @@
     height: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
+    box-shadow: 8px 8px 1rem rgba(35, 52, 53, 0.25);
+    
 }
 
 .team-info {
@@ -64,6 +78,5 @@
 }
 
 .social-icons a:hover {
-    color: #007bff;
+    color: #1586c5;
 }
-

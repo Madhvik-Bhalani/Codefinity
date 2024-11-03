@@ -67,7 +67,7 @@
         flex-direction: column;
         /* Change to column layout for mobile */
         height: auto;
-        margin: 55px 0px;
+        margin:110px 0px 55px 0px;
     }
 
     .left,

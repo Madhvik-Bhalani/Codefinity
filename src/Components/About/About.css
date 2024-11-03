@@ -1,17 +1,28 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .about-section {
     background: linear-gradient(172deg, #1296DF 6.23%, #1F5B7C 131.99%, #22506A 146.31%, #292F32 165.42%);
     padding: 60px 0;
 
     position: relative;
-    z-index: 2; /* Content will stay above the image */
-    scroll-margin-top:125px !important; 
-
+    z-index: 2;
+    /* Content will stay above the image */
+    scroll-margin-top: 125px !important;
+    animation: fadeIn 1s;
 }
 
 .about-section::before {
     content: '';
     background: url('../../Assets/line-shape.png') no-repeat center center;
-    background-size:cover;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -24,7 +35,7 @@
 .about-section::after {
     content: '';
     background: url('../../Assets/mask-shape.png') no-repeat center center;
-    background-size:cover;
+    background-size: cover;
     position: absolute;
     top: 0;
     right: 0;
@@ -40,7 +51,7 @@
     font-weight: bold;
 }
 
-.about-section p{
+.about-section p {
     color: white;
     font-size: 16px;
 }
@@ -61,4 +72,8 @@
     color: #007bff;
     font-size: 2.5rem;
     margin-right: 15px;
+}
+
+.about-section i {
+    color: #1586c5 !important;
 }

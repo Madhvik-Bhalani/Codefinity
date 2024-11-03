@@ -43,11 +43,12 @@ function ImprintModal({ imprintRef }) {
                         <div className="modal-body" style={{ padding: '20px' }}>
                             <h4>Administration</h4>
                             <p className='m-0 p-0'>Team Codefinity</p>
-                            <p className='m-0 p-0'>Bernsdorfer Str. 115<br />09126, Chemnitz, Germany</p>
+                            <p className='m-0 p-0'>Str. der Nationen 62<br />09111, Chemnitz, Germany</p>
+                            
                             <p className='m-0 p-0'>
                                 Mobile:{' '}
                                 <a href="tel:+4917657616606" style={{ color: 'black', textDecoration: 'none' }}>
-                                    +49 176 5761 6606
+                                    +49 185966 57797
                                 </a>
                             </p>
                             <p className='m-0 p-0'>

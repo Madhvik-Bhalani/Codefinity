@@ -1,6 +1,21 @@
 .contact-box {
     position: relative;
     z-index: 2;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#contact {
+    animation: fadeIn 1s;
 }
 
 .contact-box::before {
