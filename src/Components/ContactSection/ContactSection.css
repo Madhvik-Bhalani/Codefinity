@@ -1,7 +1,8 @@
 .contact-box {
     position: relative;
-    z-index: 2; /* Content will stay above the image */
+    z-index: 2;
 }
+
 .contact-box::before {
     content: '';
     background: url('../../Assets/line-shape.png') no-repeat center center;
@@ -14,3 +15,12 @@
     opacity: 0.7;
     z-index: 1;
 }
+
+ .contact-social-links a{
+    transition: color 0.3s !important;
+    color: white !important;
+}
+
+/*.contact-social-links a:hover {
+    color: #007bff !important;
+} */

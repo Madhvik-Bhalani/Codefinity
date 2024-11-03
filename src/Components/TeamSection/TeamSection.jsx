@@ -1,6 +1,10 @@
 import React from 'react';
 import './TeamSection.css';
-import img1 from '../../Assets/mk.jpg';
+import img1 from '../../Assets/Team_Members/MK.jpg';
+import img2 from '../../Assets/Team_Members/KG1.jpg';
+import img3 from '../../Assets/Team_Members/DD.jpg';
+import img4 from '../../Assets/Team_Members/KR1.JPG';
+import img5 from '../../Assets/Team_Members/JH.jpg';
 
 function TeamSection() {
     const teamMembers = [
@@ -11,7 +15,7 @@ function TeamSection() {
             image: img1,
             social: {
                 linkedin: 'https://www.linkedin.com/in/MadhvikBhalani/',
-                twitter: 'https://x.com/Madhvik_Bhalani',
+                email: 'https://x.com/Madhvik_Bhalani',
                 github: 'https://github.com/Madhvik-Bhalani',
             },
         },
@@ -19,50 +23,50 @@ function TeamSection() {
             id: 2,
             name: 'Kalpita Gawade',
             role: 'Frontend Developer',
-            image: 'https://cdn.prod.website-files.com/614638d232367ac787a19f7f/65f12a1034188cebf6bb4e86_Brent%20Stockton.webp',
+            image: img2,
             social: {
-                linkedin: '#',
-                twitter: '#',
-                github: '#',
+                linkedin: 'https://www.linkedin.com/in/kalpita-gawade',
+                email: 'kalpitagawade5@gmail.com',
+                github: 'https://github.com/KalpitaG',
             },
         },
         {
             id: 3,
             name: 'Darshan Dhanani',
             role: 'Backend Developer',
-            image: 'https://cdn.prod.website-files.com/614638d232367ac787a19f7f/65f12a1034188cebf6bb4e86_Brent%20Stockton.webp',
+            image: img3,
             social: {
-                linkedin: '#',
-                twitter: '#',
-                github: '#',
+                linkedin: 'https://www.linkedin.com/in/darshan-dhanani-04b73121a',
+                email: 'darshandhanani01@gmail.com',
+                github: 'https://github.com/darshan-1611-dev',
             },
         },
         {
             id: 4,
             name: 'Kunal Rokde',
             role: 'Frontend Developer',
-            image: 'https://cdn.prod.website-files.com/614638d232367ac787a19f7f/65f12a1034188cebf6bb4e86_Brent%20Stockton.webp',
+            image: img4,
             social: {
-                linkedin: '#',
-                twitter: '#',
-                github: '#',
+                linkedin: 'https://www.linkedin.com/in/kunal-rokde/',
+                email: 'kunalrokde149@gmail.com',
+                github: 'https://github.com/kunal-rokde',
             },
         },
         {
             id: 5,
             name: 'Jahandar Hakhiyev',
             role: 'Fullstack Developer',
-            image: 'https://cdn.prod.website-files.com/614638d232367ac787a19f7f/65f12a1034188cebf6bb4e86_Brent%20Stockton.webp',
+            image: img5,
             social: {
-                linkedin: '#',
-                twitter: '#',
-                github: '#',
+                linkedin: 'https://www.linkedin.com/in/jahandar-hakhiyev',
+                email: 'axiyev.cahandar@gmail.com',
+                github: 'https://github.com/jahandar00',
             },
         },
     ];
 
     return (
-        <div className='team-section-container' id='team'>
+        <div className='team-section-container' id='team' style={{zIndex:"2"}}>
             <h2 className='section-header text-center'>
                 <span className="section-title">Meet The Team</span>
             </h2>
@@ -77,7 +81,8 @@ function TeamSection() {
                                     <p className="team-role">{member.role}</p>
                                     <div className="social-icons">
                                         <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-                                        <a href={member.social.twitter} target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-x-twitter"></i></a>
+                                        {/* <a href={member.social.email} target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a> */}
+                                        <a href={`mailto:${member.social.email}`} target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-paper-plane"></i></a>
                                         <a href={member.social.github} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                                     </div>
                                 </div>
