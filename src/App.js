@@ -12,6 +12,8 @@ import ContactSection from "./Components/ContactSection/ContactSection";
 import Footer from "./Components/Footer/Footer";
 import ImprintModal from "./Components/ImprintModal/ImprintMode";
 import { useRef } from "react";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ToastContainer limit={3} />
         <Navbar />
         <Hero />
         <About />

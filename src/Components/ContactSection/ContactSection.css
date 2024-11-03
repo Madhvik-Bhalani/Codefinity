@@ -55,3 +55,11 @@
 .contact-social-links a:hover {
     color: #003366 !important;
 }
+
+
+@media (max-width: 991px) {
+
+    #contact{
+        scroll-margin-top: 100px;
+    }
+}

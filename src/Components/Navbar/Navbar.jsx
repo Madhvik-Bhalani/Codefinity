@@ -18,7 +18,7 @@ function Navbar() {
         <>
             <nav className="navbar navbox navbar-expand-lg bg-light bg-body-tertiary fixed-top" style={{ height: "80px" }}>
                 <div className="container-fluid nav-main-box">
-                    <Link className="navbar-brand d-flex align-items-center" to="/">
+                    <Link className="navbar-brand d-flex align-items-center" to="/#home" onClick={() => scrollToSection('home')}>
                         <img src={logo} className="logoimg" alt="Codefinity.." />
                         <span className="nav-link active web-app-name mt-1">
                             <h1 style={{ fontSize: "39px" }}><span style={{ color: "#121b22", textShadow: "0.4px 0.4px 0.4px #121b22" }}>Code</span><span style={{ color: "#5a8ad3", textShadow: "0.4px 0.4px 0.4px #121b22" }}>finity</span></h1>
