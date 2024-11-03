@@ -28,7 +28,7 @@ function Hero() {
                 </div>
 
                 <div className="right">
-                    <img src={hero} alt="Home Page.." />
+                    {/* <img src={hero} alt="Home Page.." /> */}
                 </div>
             </div>
         </>
