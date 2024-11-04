@@ -19,19 +19,9 @@ function TeamSection() {
                 github: 'https://github.com/Madhvik-Bhalani',
             },
         },
+
         {
             id: 2,
-            name: 'Kalpita Gawade',
-            role: 'Frontend Developer',
-            image: img2,
-            social: {
-                linkedin: 'https://www.linkedin.com/in/kalpita-gawade',
-                email: 'kalpitagawade5@gmail.com',
-                github: 'https://github.com/KalpitaG',
-            },
-        },
-        {
-            id: 3,
             name: 'Darshan Dhanani',
             role: 'Backend Developer',
             image: img3,
@@ -39,6 +29,16 @@ function TeamSection() {
                 linkedin: 'https://www.linkedin.com/in/darshan-dhanani-04b73121a',
                 email: 'darshandhanani01@gmail.com',
                 github: 'https://github.com/darshan-1611-dev',
+            },
+        }, {
+            id: 3,
+            name: 'Kalpita Gawade',
+            role: 'Frontend Developer',
+            image: img2,
+            social: {
+                linkedin: 'https://www.linkedin.com/in/kalpita-gawade',
+                email: 'kalpitagawade5@gmail.com',
+                github: 'https://github.com/KalpitaG',
             },
         },
         {
