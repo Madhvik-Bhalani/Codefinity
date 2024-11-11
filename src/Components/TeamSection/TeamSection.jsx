@@ -55,7 +55,7 @@ function TeamSection() {
         {
             id: 5,
             name: 'Jahandar Hakhiyev',
-            role: 'DA & Backend Developer',
+            role: 'DA &  Developer',
             image: img5,
             social: {
                 linkedin: 'https://www.linkedin.com/in/jahandar-hakhiyev',
