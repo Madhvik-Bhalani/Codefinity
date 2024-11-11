@@ -7,10 +7,8 @@ const About = () => {
             <div className="container">
                 <div className="text-center mb-5">
                     <h2>Who We Are</h2>
-                    <p className='mt-3 mb-2'>  
-                        At Codefinity, we are a team of dedicated developers and students exploring innovative AI solutions.
-                        Our goal is to push the boundaries of technology and bring impactful ideas to life. With a commitment
-                        to continuous learning and development, we are building projects that make a difference in the world of AI.
+                    <p className='mt-3 mb-2'>
+                        Codefinity is where AI meets proactive security. We are a passionate team pushing boundaries to create intelligent, trust-centered solutions.
                     </p>
                 </div>
                 <div className="row">
@@ -22,8 +20,9 @@ const About = () => {
                                     <i className="fas fa-eye fs-1 me-3"></i>
                                     <h5 className="mb-0">Our Vision</h5>
                                 </div>
-                                <p className="text-muted" style={{textAlign:"justify"}}>
-                                Our vision is to empower the next generation of developers and innovators through AI projects that solve real-world problems. We aim to remain at the forefront of technology, setting high standards for learning and innovation, and inspiring others to push the boundaries of what is possible.
+
+                                <p className="text-muted" style={{ textAlign: "justify" }}>
+                                    Our vision is to shape a trusted digital landscape by pioneering AI-driven security solutions that proactively protect what matters most. We empower organizations to stay ahead of emerging threats, safeguard their assets, and maintain resilience in a rapidly changing world—ensuring a safer, more confident, and trustworthy digital future for all.
                                 </p>
                             </div>
                         </div>
@@ -37,8 +36,9 @@ const About = () => {
                                     <i className="fas fa-bullseye fs-1 me-3"></i>
                                     <h5 className="mb-0">Our Mission</h5>
                                 </div>
-                                <p className="text-muted" style={{textAlign:"justify"}}>
-                                Our mission is to learn, innovate, and apply AI technology in meaningful ways. We strive to develop solutions that increase efficiency, create value, and make a positive impact on the tech world. By exploring and collaborating, we aim to make technology accessible and transformative.
+
+                                <p className="text-muted" style={{ textAlign: "justify" }}>
+                                    Our mission is to make security smarter by harnessing the power of AI to equip organizations for proactive defense. We develop adaptive, AI-driven solutions that enable them to stay ahead of evolving threats, safeguard critical assets, and maintain operational resilience—ensuring they can thrive securely in a dynamic digital environment.
                                 </p>
                             </div>
                         </div>

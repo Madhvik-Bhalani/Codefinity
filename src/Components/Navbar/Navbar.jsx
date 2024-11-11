@@ -16,7 +16,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className="navbar navbox navbar-expand-lg bg-light bg-body-tertiary fixed-top" style={{ height: "80px" }}>
+            <nav className="navbar navbox navbar-expand-lg bg-light bg-body-tertiary fixed-top" style={{ height: "75px" }}>
                 <div className="container-fluid nav-main-box">
                     <Link className="navbar-brand d-flex align-items-center" to="/#home" onClick={() => scrollToSection('home')}>
                         <img src={logo} className="logoimg" alt="Codefinity.." />
@@ -35,25 +35,25 @@ function Navbar() {
 
                             <li className="nav-item">
                                 <Link className="nav-link links" to="/#home" onClick={() => scrollToSection('home')} style={{ color: location.hash === "#home" ? "#5a8ad3" : "", textShadow: location.hash === "#home" ? ".37px .37px .37px #121b22" : "" }}>
-                                    <i className="fa-solid fa-house-chimney nicons" style={{ color: location.hash === "#home" ? "#5a8ad3" : "", textShadow: location.hash === "#home" ? ".20px .20px .20px #121b22" : "" }}></i>Home
+                                    Home
                                 </Link>
                             </li>
 
                             <li className="nav-item">
                                 <Link className="nav-link links" to="/#about" onClick={() => scrollToSection('about')} style={{ color: location.hash === "#about" ? "#5a8ad3" : "", textShadow: location.hash === "#about" ? ".37px .37px .37px #121b22" : "" }}>
-                                    <i className="fa-solid fa-user nicons" style={{ color: location.hash === "#about" ? "#5a8ad3" : "", textShadow: location.hash === "#about" ? ".20px .20px .20px #121b22" : "" }}></i>About
+                                    About
                                 </Link>
                             </li>
 
                             <li className="nav-item">
                                 <Link className="nav-link links" to="/#team" onClick={() => scrollToSection('team')} style={{ color: location.hash === "#team" ? "#5a8ad3" : "", textShadow: location.hash === "#team" ? ".37px .37px .37px #121b22" : "" }}>
-                                    <i className="fas fa-users nicons" style={{ color: location.hash === "#team" ? "#5a8ad3" : "", textShadow: location.hash === "#team" ? ".20px .20px .20px #121b22" : "" }}></i>Team
+                                    Team
                                 </Link>
                             </li>
 
                             <li className="nav-item">
                                 <Link className="nav-link links" to="/#contact" onClick={() => scrollToSection('contact')} style={{ color: location.hash === "#contact" ? "#5a8ad3" : "", textShadow: location.hash === "#contact" ? ".37px .37px .37px #121b22" : "" }}>
-                                    <i className="fas fa-envelope nicons" style={{ color: location.hash === "#contact" ? "#5a8ad3" : "", textShadow: location.hash === "#contact" ? ".20px .20px .20px #121b22" : "" }}></i>Contact
+                                    Contact
                                 </Link>
                             </li>
 

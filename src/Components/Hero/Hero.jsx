@@ -11,9 +11,9 @@ function Hero() {
             <div className="hero" id="home">
 
                 <div className="left">
-                    <h1 className='text-capitalize' style={{ color: "121b22", width: "99%" }}>Transforming Ideas with AI Innovation</h1>
+                    <h1 className='text-capitalize' style={{ color: "121b22", width: "99%" }}>Boundless Security, Infinite Trust</h1>
                     <div className="para" style={{ width: "95%", textAlign: "justify" }} >
-                        <p>Welcome to <span style={{ textShadow: "0.25px 0.25px 0.25px #121b22" }}>Codefinity</span>, your hub for AI-driven solutions. As a team of passionate developers, we are building projects that push the boundaries of artificial intelligence. Join us as we explore new horizons in technology and make a difference in the digital world.
+                        <p>Welcome to <span style={{ textShadow: "0.25px 0.25px 0.25px #121b22" }}>Codefinity</span>, where we are redefining cybersecurity with AI-driven, smart security assessments. Our mission is to empower organizations with intelligent solutions that provide proactive, privacy-centered protection. By blending advanced AI technology with a commitment to trust and transparency, we deliver security solutions that anticipate threats, safeguard data, and build enduring confidence in an ever-evolving digital landscape.
                         </p>
                     </div>
                     <div className="btns">

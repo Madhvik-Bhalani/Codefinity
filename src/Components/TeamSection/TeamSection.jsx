@@ -11,7 +11,7 @@ function TeamSection() {
         {
             id: 1,
             name: 'Madhvik Bhalani',
-            role: 'Fullstack Developer',
+            role: 'AI/ML & Backend Developer',
             image: img1,
             social: {
                 linkedin: 'https://www.linkedin.com/in/MadhvikBhalani/',
@@ -23,7 +23,7 @@ function TeamSection() {
         {
             id: 2,
             name: 'Darshan Dhanani',
-            role: 'Backend Developer',
+            role: 'AI/ML & Backend Developer',
             image: img3,
             social: {
                 linkedin: 'https://www.linkedin.com/in/darshan-dhanani-04b73121a',
@@ -33,7 +33,7 @@ function TeamSection() {
         }, {
             id: 3,
             name: 'Kalpita Gawade',
-            role: 'Frontend Developer',
+            role: 'QA & Frontend Developer',
             image: img2,
             social: {
                 linkedin: 'https://www.linkedin.com/in/kalpita-gawade',
@@ -44,7 +44,7 @@ function TeamSection() {
         {
             id: 4,
             name: 'Kunal Rokde',
-            role: 'Frontend Developer',
+            role: 'SE & Frontend Developer',
             image: img4,
             social: {
                 linkedin: 'https://www.linkedin.com/in/kunal-rokde/',
@@ -55,7 +55,7 @@ function TeamSection() {
         {
             id: 5,
             name: 'Jahandar Hakhiyev',
-            role: 'Fullstack Developer',
+            role: 'DA & Backend Developer',
             image: img5,
             social: {
                 linkedin: 'https://www.linkedin.com/in/jahandar-hakhiyev',

@@ -61,5 +61,12 @@
 
     #contact{
         scroll-margin-top: 100px;
+        margin-bottom: -25px !important;
+    }
+}
+@media (max-width: 420px) {
+
+    #contact button{
+        width: 45% !important;
     }
 }

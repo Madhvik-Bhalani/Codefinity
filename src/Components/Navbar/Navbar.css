@@ -55,6 +55,9 @@
     transition-property: transform;
 }
 
+.links{
+font-weight: 500 !important;
+}
 /* Responsive design for mobile */
 @media (max-width: 991px) {
 

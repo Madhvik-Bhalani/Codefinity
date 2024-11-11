@@ -83,7 +83,7 @@ function ContactSection() {
                 {/* Contact Information Section */}
                 <div className="col-md-5 p-4 contact-box" style={{ background: 'linear-gradient(172deg, #1296DF 6.23%, #1F5B7C 131.99%, #22506A 146.31%, #292F32 165.42%)', color: '#fff', borderRadius: '8px' }}>
                     <h3>Contact Information</h3>
-                    <p style={{ fontSize: '17px' }}>Fill up the form and our team will get back to you within 24 hours.</p>
+                    <p style={{ fontSize: '17px' }}>Let’s explore how we can build <span>a safer digital future together.</span></p>
                     <div className="mb-3 mt-4 contact-icons">
                         <a href="tel:+4917657616606">
                             <i className="fas fa-phone-alt me-2" style={{ fontSize: '18px' }}></i>
@@ -103,7 +103,8 @@ function ContactSection() {
                         </a>
                     </div>
                     <div className="mt-5 contact-social-links">
-                        <a href="" target="_blank" rel="noreferrer">
+                        <a href="https://www.facebook.com/teamcodefinity
+" target="_blank" rel="noreferrer">
                             <i className="fab fa-facebook me-3" style={{ fontSize: '22px' }}></i>
                         </a>
                         <a href="" target="_blank" rel="noreferrer">
