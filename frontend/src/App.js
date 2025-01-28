@@ -7,6 +7,7 @@ import {
 import Navbar from './Components/Navbar/Navbar';
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
+import ProductSection from './Components/ProductSection/ProductSection'; 
 import TeamSection from "./Components/TeamSection/TeamSection";
 import ContactSection from "./Components/ContactSection/ContactSection";
 import Footer from "./Components/Footer/Footer";
@@ -26,6 +27,7 @@ function App() {
         <Navbar />
         <Hero />
         <About />
+        <ProductSection />
         <TeamSection />
         <ContactSection />
         <ImprintModal imprintRef={imprintRef} />

@@ -9,7 +9,7 @@
 }
 
 .about-section {
-    background: linear-gradient(172deg, #1296DF 6.23%, #1F5B7C 131.99%, #22506A 146.31%, #292F32 165.42%);
+    background: linear-gradient(to top, #1296df, black);
     padding: 60px 0;
 
     position: relative;

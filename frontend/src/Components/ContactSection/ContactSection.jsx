@@ -5,10 +5,8 @@ import emailjs from '@emailjs/browser';
 import validator from 'validator';
 
 function ContactSection() {
-    // Initialize state
     const [data, setData] = useState({ fname: '', lname: '', email: '', msg: '' });
 
-    // Function to handle input changes
     const handleChange = (e) => {
         const { name, value } = e.target;
         setData((prevData) => ({
@@ -17,11 +15,9 @@ function ContactSection() {
         }));
     };
 
-    // Function to handle form submission
     const submitHandler = async (e) => {
         e.preventDefault();
 
-        // Trim whitespace and validate email and other fields
         const trimmedData = {
             fname: data.fname.trim(),
             lname: data.lname.trim(),
@@ -29,23 +25,20 @@ function ContactSection() {
             msg: data.msg.trim(),
         };
 
-
         if (!trimmedData.fname || !trimmedData.lname || !trimmedData.msg) {
             toast.error("Please fill in all fields without whitespace.", {
                 position: "top-right",
-                autoClose: 3500
+                autoClose: 3500,
             });
             return;
         }
 
-
-        // Validate email
         if (!validator.isEmail(data.email)) {
             toast.error("Please enter a valid email address.", {
                 position: "top-right",
-                autoClose: 3500
+                autoClose: 3500,
             });
-            return; // Exit the function if the email is invalid
+            return;
         }
 
         const mailData = {
@@ -64,123 +57,101 @@ function ContactSection() {
 
             toast.success("Thank you for reaching out! Your message has been sent successfully.", {
                 position: "top-right",
-                autoClose: 3500
+                autoClose: 3500,
             });
             setData({ fname: '', lname: '', email: '', msg: '' });
         } catch (error) {
             console.error(error);
             toast.error("There was an error sending your message. Please try again later." + error.message, {
                 position: "top-right",
-                autoClose: 3500
+                autoClose: 3500,
             });
         }
     };
 
-
     return (
-        <div className="container py-5" id='contact'>
-            <div className="row justify-content-between">
-                {/* Contact Information Section */}
-                <div className="col-md-5 p-4 contact-box" style={{ background: 'linear-gradient(172deg, #1296DF 6.23%, #1F5B7C 131.99%, #22506A 146.31%, #292F32 165.42%)', color: '#fff', borderRadius: '8px' }}>
+        <div className="contact-container py-5" id="contact">
+            <div className="contact-content">
+                {/* Contact Info */}
+                <div className="contact-info">
                     <h3>Contact Information</h3>
-                    <p style={{ fontSize: '17px' }}>Let’s explore how we can build <span>a safer digital future together.</span></p>
-                    <div className="mb-3 mt-4 contact-icons">
-                        <a href="tel:+4917657616606">
-                            <i className="fas fa-phone-alt me-2" style={{ fontSize: '18px' }}></i>
-                            <span style={{ fontSize: '17px' }}>+49 185966 57797</span>
-                        </a>
+                    <p className="contact-description">Let’s explore how we can build a safer digital future together.</p>
+                    <div className="contact-details">
+                        <div className="contact-item">
+                            <a href="tel:+4917657616606">
+                                <i className="fas fa-phone-alt"></i> +49 185966 57797
+                            </a>
+                        </div>
+                        <div className="contact-item">
+                            <a href="mailto:info.codefinity@gmail.com">
+                                <i className="fas fa-envelope"></i> info.codefinity@gmail.com
+                            </a>
+                        </div>
+                        <div className="contact-item">
+                            <a href="https://maps.app.goo.gl/57BmAnCyAQHGw7GJ7" target="_blank" rel="noreferrer">
+                                <i className="fas fa-map-marker-alt"></i> Str. der Nationen 62, 09111, Chemnitz, Germany
+                            </a>
+                        </div>
                     </div>
-                    <div className="mb-3 contact-icons">
-                        <a href="mailto:info.codefinity@gmail.com">
-                            <i className="fas fa-envelope me-2" style={{ fontSize: '18px' }}></i>
-                            <span style={{ fontSize: '17px' }}>info.codefinity@gmail.com</span>
+                    <div className="social-links">
+                        <a href="https://www.facebook.com/teamcodefinity" target="_blank" rel="noreferrer">
+                            <i className="fab fa-facebook"></i>
                         </a>
-                    </div>
-                    <div className="mb-3 contact-icons">
-                        <a href="https://maps.app.goo.gl/57BmAnCyAQHGw7GJ7" target="_blank" rel="noreferrer">
-                            <i className="fas fa-map-marker-alt me-2" style={{ fontSize: '18px' }}></i>
-                            <span style={{ fontSize: '17px' }}>Str. der Nationen 62, 09111, Chemnitz, Germany</span>
-                        </a>
-                    </div>
-                    <div className="mt-5 contact-social-links">
-                        <a href="https://www.facebook.com/teamcodefinity
-" target="_blank" rel="noreferrer">
-                            <i className="fab fa-facebook me-3" style={{ fontSize: '22px' }}></i>
-                        </a>
-                        <a href="" target="_blank" rel="noreferrer">
-                            <i className="fab fa-instagram me-3" style={{ fontSize: '22px' }}></i>
+                        <a href="#" target="_blank" rel="noreferrer">
+                            <i className="fab fa-instagram"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/Team-Codefinity/" target="_blank" rel="noreferrer">
-                            <i className="fab fa-linkedin me-3" style={{ fontSize: '22px' }}></i>
+                            <i className="fab fa-linkedin"></i>
                         </a>
                         <a href="https://x.com/Team_Codefinity" target="_blank" rel="noreferrer">
-                            <i className="fab fa-twitter me-3" style={{ fontSize: '22px' }}></i>
+                            <i className="fab fa-twitter"></i>
                         </a>
                     </div>
                 </div>
 
-                {/* Form Section */}
-                <div className="col-md-6 p-4 col-end">
-                    <h3 className="text-center mb-3">Get in Touch with Us</h3>
+                {/* Form */}
+                <div className="contact-form">
+                    <h3>Get in Touch with Us</h3>
                     <form onSubmit={submitHandler}>
-                        <div className="row mb-4 mt-4">
-                            <div className="col">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="First Name"
-                                    name="fname"
-                                    value={data.fname}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-                            <div className="col">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Last Name"
-                                    name="lname"
-                                    value={data.lname}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-                        </div>
-
-                        <div className="mb-4">
+                        <div className="form-group">
                             <input
-                                type="email"
-                                className="form-control"
-                                placeholder="Email"
-                                name="email"
-                                value={data.email}
+                                type="text"
+                                className="form-input"
+                                placeholder="First Name"
+                                name="fname"
+                                value={data.fname}
+                                onChange={handleChange}
+                                required
+                            />
+                            <input
+                                type="text"
+                                className="form-input"
+                                placeholder="Last Name"
+                                name="lname"
+                                value={data.lname}
                                 onChange={handleChange}
                                 required
                             />
                         </div>
-
-                        <div className="mb-4">
-                            <textarea
-                                className="form-control"
-                                rows="4"
-                                placeholder="Message..."
-                                name="msg"
-                                value={data.msg}
-                                onChange={handleChange}
-                                required
-                            ></textarea>
-                        </div>
-
-                        <button
-                            type="submit"
-                            style={{
-                                background: 'linear-gradient(172deg, #1296DF 6.23%, #1F5B7C 131.99%, #22506A 146.31%, #292F32 165.42%)',
-                                color: 'white',
-                                width: '35%',
-                            }}
-                            className="btn mx-auto d-block"
-                        >
+                        <input
+                            type="email"
+                            className="form-input"
+                            placeholder="Email"
+                            name="email"
+                            value={data.email}
+                            onChange={handleChange}
+                            required
+                        />
+                        <textarea
+                            className="form-textarea"
+                            rows="4"
+                            placeholder="Message..."
+                            name="msg"
+                            value={data.msg}
+                            onChange={handleChange}
+                            required
+                        ></textarea>
+                        <button type="submit" className="form-button">
                             Send Message
                         </button>
                     </form>

@@ -1,82 +1,91 @@
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+/* Team Section Container */
+.team-section {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #1296df, black);
+    text-align: center;
 }
 
-.team-section-container {
-    padding: 50px 0;
-    background: url('../../Assets/hero-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 65px 0px 0px 0px;
-    scroll-margin-top: 125px;
-    animation: fadeIn 1s;
-}
-
-.section-header {
-    font-size: 2.5em;
+.section-heading {
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 40px;
-    color: #333;
+    color: white;
 }
 
-.section-title {
-    /* border-bottom: 3px solid #e99f27; */
-    padding-bottom: 5px;
+/* Team Grid */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
 }
 
+/* Team Card */
 .team-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 25px;
-    transition: transform 0.3s;
+    max-width: 250px;
 }
 
-.team-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0.4px 0.4px 1rem rgba(35, 52, 53, 0.25);
-    /* box-shadow: 3px 3px 10px 0px #5c8ba7; */
-}
-
-.team-image {
+.image-container {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 15px;
-    box-shadow: 8px 8px 1rem rgba(35, 52, 53, 0.25);
-    
+    overflow: hidden;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.team-info {
-    color: #333;
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
 }
 
-.team-name {
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-bottom: 5px;
+.image-container:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-.team-role {
-    font-size: 1em;
-    color: #777;
-    margin-bottom: 15px;
+.team-card h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: white;
+}
+
+.team-card p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.53);
+    margin: 0 0 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .social-icons a {
-    color: #555;
-    font-size: 1.25em;
-    margin: 0 10px;
-    transition: color 0.3s;
+    font-size: 1.4rem;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .social-icons a:hover {
-    color: #1586c5;
+    color: black; /* Blue on hover */
+    transform: scale(1); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-grid {
+        gap: 50px;
+    }
+
+    .image-container {
+        width: 120px;
+        height: 120px;
+    }
 }
