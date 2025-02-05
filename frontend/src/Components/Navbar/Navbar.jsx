@@ -112,14 +112,20 @@ function Navbar() {
                 </div>
 
                 {/* Get Started Button */}
-                <motion.button
-                    className="btn-outline-sm"
-                    whileHover={{ scale: 1.15 }}
-                    transition={{ duration: 0.3 }}
-                >
-                    <span className="shimmer-effect"></span>
-                    Get Started
-                </motion.button>
+                <a
+      href="https://astra-codefinity.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <motion.button
+        className="btn-outline-sm"
+        whileHover={{ scale: 1.15 }}
+        transition={{ duration: 0.3 }}
+      >
+        <span className="shimmer-effect"></span>
+        Get Started
+      </motion.button>
+    </a>
             </div>
         </nav>
     );

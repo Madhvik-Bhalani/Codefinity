@@ -2,7 +2,7 @@ import React from 'react';
 import './TeamSection.css';
 import img1 from '../../Assets/Team_Members/MK.jpg';
 import img2 from '../../Assets/Team_Members/KG.jpg';
-import img3 from '../../Assets/Team_Members/DD.jpg';
+import img3 from '../../Assets/Team_Members/DD3.JPG';
 import img4 from '../../Assets/Team_Members/KR1.JPG';
 import img5 from '../../Assets/Team_Members/JH.jpg';
 
@@ -10,8 +10,30 @@ function TeamSection() {
     const teamMembers = [
         {
             id: 1,
+                name: 'Kalpita Gawade',
+                role: 'MD',
+                image: img2,
+                social: {
+                    linkedin: 'https://www.linkedin.com/in/kalpita-gawade',
+                    email: 'mailto:kalpitagawade5@gmail.com',
+                    github: 'https://github.com/KalpitaG',
+            },
+        },
+        {
+            id: 2,
+                name: 'Kunal Rokde',
+                role: 'CEO',
+                image: img4,
+                social: {
+                    linkedin: 'https://www.linkedin.com/in/kunal-rokde/',
+                    email: 'mailto:kunalrokde149@gmail.com',
+                    github: 'https://github.com/kunal-rokde',
+            },
+        },
+        {
+            id: 3,
             name: 'Madhvik Bhalani',
-            role: 'AI/ML & Backend Developer',
+            role: 'CTO',
             image: img1,
             social: {
                 linkedin: 'https://www.linkedin.com/in/MadhvikBhalani/',
@@ -20,9 +42,9 @@ function TeamSection() {
             },
         },
         {
-            id: 2,
+            id: 4,
             name: 'Darshan Dhanani',
-            role: 'AI/ML & Backend Developer',
+            role: 'COO',
             image: img3,
             social: {
                 linkedin: 'https://www.linkedin.com/in/darshan-dhanani-04b73121a',
@@ -31,31 +53,9 @@ function TeamSection() {
             },
         },
         {
-            id: 3,
-            name: 'Kalpita Gawade',
-            role: 'QA & Frontend Developer',
-            image: img2,
-            social: {
-                linkedin: 'https://www.linkedin.com/in/kalpita-gawade',
-                email: 'mailto:kalpitagawade5@gmail.com',
-                github: 'https://github.com/KalpitaG',
-            },
-        },
-        {
-            id: 4,
-            name: 'Kunal Rokde',
-            role: 'SE & Frontend Developer',
-            image: img4,
-            social: {
-                linkedin: 'https://www.linkedin.com/in/kunal-rokde/',
-                email: 'mailto:kunalrokde149@gmail.com',
-                github: 'https://github.com/kunal-rokde',
-            },
-        },
-        {
             id: 5,
             name: 'Jahandar Hakhiyev',
-            role: 'DA & Backend Developer',
+            role: 'CFO',
             image: img5,
             social: {
                 linkedin: 'https://www.linkedin.com/in/jahandar-hakhiyev',
@@ -66,7 +66,7 @@ function TeamSection() {
     ];
 
     return (
-        <div className="team-section">
+        <div className="team-section" id='team'>
             <h2 className="section-heading">Meet the Team</h2>
             <div className="team-grid">
                 {teamMembers.map((member) => (
