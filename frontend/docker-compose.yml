@@ -1,0 +1,6 @@
+services:
+  codefinity:
+    build: .
+    ports:
+      - "2000:2000"
+    restart: always
